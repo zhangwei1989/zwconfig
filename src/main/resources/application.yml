@@ -20,7 +20,11 @@ spring:
         path: /h2
         settings:
           web-allow-others: true
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 logging:
   level:
     root: info
-    org.springframework: debug
+    org.springframework: info

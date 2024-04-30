@@ -48,8 +48,8 @@ public class ZwConfigController {
             } else {
                 configsMapper.update(new Configs(app, env, ns, k, params.get(k)));
             }
-            VERSIONS.put(app + "-" + env + "-" + ns, System.currentTimeMillis());
         });
+        VERSIONS.put(app + "-" + env + "-" + ns, System.currentTimeMillis());
 
         return configsMapper.list(app, env, ns);
     }
