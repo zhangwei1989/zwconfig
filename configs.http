@@ -1,0 +1,15 @@
+### list
+GET http://localhost:9129/list?app=app1&env=dev&ns=public
+
+### version
+GET http://localhost:9129/version?app=app1&env=dev&ns=public
+
+### update
+POST http://localhost:9129/update?app=app1&env=dev&ns=public
+Content-Type: application/json
+
+{
+  "a": "a200",
+  "b": "b200",
+  "e": "e100"
+}
