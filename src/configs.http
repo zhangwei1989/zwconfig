@@ -6,7 +6,14 @@ POST http://localhost:9129/update?app=app1&env=dev&ns=public
 Content-Type: application/json
 
 {
-  "zw.a": "dev200",
-  "zw.c": "cc200",
-  "zw.d": "dd200"
+  "zw.a": "deva3000",
+  "zw.b": "devb1000",
+  "zw.c": "cc2000",
+  "zw.d": "dd2000"
 }
+
+### version
+GET http://localhost:9129/version?app=app1&env=dev&ns=public
+
+### demo 9130
+GET http://localhost:9130/demo

@@ -6,8 +6,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * config server endpoint
@@ -22,7 +24,7 @@ public class ZwConfigController {
     @Autowired
     ConfigsMapper mapper;
 
-    Map<String, Long> VERSIONS;
+    Map<String, Long> VERSIONS = new ConcurrentHashMap<>();
 
     @GetMapping("/list")
     public List<Configs> list(String app, String env, String ns) {
