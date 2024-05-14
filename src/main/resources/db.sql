@@ -6,6 +6,6 @@ create table if not exists `configs` (
     `pval` varchar(128) not null
 );
 
-insert into configs (app, env, ns, pkey, pval) values ('app1', 'dev', 'public', 'a', 'aa100');
-insert into configs (app, env, ns, pkey, pval) values ('app1', 'dev', 'public', 'b', 'bb100');
-insert into configs (app, env, ns, pkey, pval) values ('app1', 'dev', 'public', 'c', 'cc100');
+insert into configs (app, env, ns, pkey, pval) values ('app1', 'dev', 'public', 'zw.a', 'aa100');
+insert into configs (app, env, ns, pkey, pval) values ('app1', 'dev', 'public', 'zw.b', 'bb100');
+insert into configs (app, env, ns, pkey, pval) values ('app1', 'dev', 'public', 'zw.c', 'cc100');

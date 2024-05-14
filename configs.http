@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
   "zw.a": "deva3000",
-  "zw.b": "devb1000",
+  "zw.b": "devb3000",
   "zw.c": "cc2000",
   "zw.d": "dd2000"
 }
