@@ -22,3 +22,4 @@ mvn clean deploy -P release
 - [ ] 集成 WmRPC 框架
 - [ ] 服务者端
   - [ ] 自动选举主节点机制
+- [ ] logging.level 配置后，即时生效适配
