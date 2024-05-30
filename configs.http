@@ -29,5 +29,8 @@ Content-Type: application/json
 ### version
 GET http://localhost:9129/version?app=app1&env=dev&ns=public
 
+### status
+GET http://localhost:9129/status
+
 ### demo 9130
 GET http://localhost:9130/demo

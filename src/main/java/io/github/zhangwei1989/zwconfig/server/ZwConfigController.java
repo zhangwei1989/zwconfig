@@ -23,6 +23,9 @@ public class ZwConfigController {
     @Autowired
     ConfigsMapper configsMapper;
 
+    @Autowired
+    DistributedLocks locks;
+
     private Map<String, Long> VERSIONS = new ConcurrentHashMap<>();
 
     @GetMapping("/list")
@@ -57,5 +60,10 @@ public class ZwConfigController {
     @GetMapping("/version")
     public Long version(String app, String env, String ns) {
         return VERSIONS.getOrDefault(app + "-" + env + "-" + ns, -1L);
+    }
+
+    @GetMapping("/status")
+    public boolean status() {
+        return locks.getLocked().get();
     }
 }
